@@ -41,30 +41,32 @@ document.addEventListener('DOMContentLoaded', () => {
          // Display the filtered recommendations in the dropdown
          if (filteredRecommendations.length > 0) {
             filteredRecommendations.forEach(result => {
-             /*   const resultItem = document.createElement('div');
+                const resultItem = document.createElement('div');
                 resultItem.classList.add('result-item');
 
-                const link = document.createElement('a');
+             /*   const link = document.createElement('a');
                 link.href = '#'; // Update this to the actual URL if available
-                link.textContent = result.name;
+                link.textContent = result.name;*/
 
                 const image = document.createElement('img');
                 image.src = result.imageUrl;
+                image.width = '256px';
+                image.height = '256px';
                 image.alt = result.name;
 
                 const description = document.createElement('p');
                 description.textContent = result.description;
 
-                resultItem.appendChild(link);
+               // resultItem.appendChild(link);
                 resultItem.appendChild(image);
-                resultItem.appendChild(description);*/
+                resultItem.appendChild(description);
 
-                const resultItem = document.createElement('div');
+               /* const resultItem = document.createElement('div');
                 resultItem.className = 'result-item';
                 resultItem.innerHTML = `
-                    <img src="${result.imageUrl}" alt="${result.name}">
+                    <img src="${result.imageUrl}"  width="256" height="256" alt="${result.name}">
                     <p>${result.description}</p>
-                `;
+                `;*/
 
                 resultsContainer.appendChild(resultItem);
             });
