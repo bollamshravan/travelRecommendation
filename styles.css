@@ -414,7 +414,40 @@ footer p {
     color: black;
 }
 
-#search-results a:hover {
+#search-results a:hover {/* Center the navigation bar */
+header nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Push the logo to the left */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
     background-color: lightgreen ;
 }
 

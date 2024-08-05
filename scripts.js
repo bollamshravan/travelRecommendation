@@ -47,12 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 const link = document.createElement('a');
                 //link.href = '#'; // Update this to the actual URL if available
                 link.textContent = result.name;
+                link.style.color= 'black'
 
                 const image = document.createElement('img');
                 image.src = result.url;
                 image.width = '256px';
                 image.height = '256px';
                 image.alt = result.name;
+                image.alt.style.color= 'black';
 
                 const description = document.createElement('p');
                 description.textContent = result.description;
