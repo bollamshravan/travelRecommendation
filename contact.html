@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Website Logo">
+                <span>Travel Website</span>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for recommendations...">
+                <button id="search-button">Search</button>
+                <button id="reset-button">Reset</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Please fill out the form below to get in touch.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: info@travelwebsite.com</p>
+        <p>Follow us on social media</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
