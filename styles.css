@@ -203,7 +203,6 @@ nav {
 #search-results {
     display: none;
     position: absolute;
-    background-color: white;
     border: 1px solid #ccc;
     z-index: 1000;
     width: 100%;
@@ -214,10 +213,6 @@ nav {
     padding: 8px;
     text-decoration: none;
     color: black;
-}
-
-#search-results a:hover {
-    background-color: #f1f1f1;
 }
 
 .result-item {
@@ -234,6 +229,7 @@ nav {
 
 .result-item p {
     margin: 8px 0 0;
+    color: black; /* Set paragraph text color to black */
 }
 
 /* Dropdown Content */
@@ -242,7 +238,7 @@ nav {
     position: absolute;
     top: 100%; /* Ensure the dropdown displays below the search box */
     left: 0;
-    background-color: #f9f9f9;
+    background-color: lightgrey;
     min-width: 300px; /* Increase the width of the dropdown */
     max-height: 400px; /* Set a maximum height for the dropdown */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */

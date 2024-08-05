@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const resultItem = document.createElement('div');
                 resultItem.classList.add('result-item');
 
-             /*   const link = document.createElement('a');
-                link.href = '#'; // Update this to the actual URL if available
-                link.textContent = result.name;*/
+                const link = document.createElement('a');
+                //link.href = '#'; // Update this to the actual URL if available
+                link.textContent = result.name;
 
                 const image = document.createElement('img');
                 image.src = result.url;
