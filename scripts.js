@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
          // Display the filtered recommendations in the dropdown
          if (filteredRecommendations.length > 0) {
             filteredRecommendations.forEach(result => {
-                const resultItem = document.createElement('div');
+             /*   const resultItem = document.createElement('div');
                 resultItem.classList.add('result-item');
 
                 const link = document.createElement('a');
@@ -57,7 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 resultItem.appendChild(link);
                 resultItem.appendChild(image);
-                resultItem.appendChild(description);
+                resultItem.appendChild(description);*/
+
+                const resultItem = document.createElement('div');
+                resultItem.className = 'result-item';
+                resultItem.innerHTML = `
+                    <img src="${result.imageUrl}" alt="${result.name}">
+                    <p>${result.description}</p>
+                `;
 
                 resultsContainer.appendChild(resultItem);
             });
