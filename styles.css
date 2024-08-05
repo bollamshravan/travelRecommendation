@@ -1,3 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fallback background color */
+    color: #333;
+    background-image: url('706912.jpg'); /* Add the background image */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Ensure the background image stays fixed during scroll */
+}
+
+/* Header Styles */
+header nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Push the logo to the left */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+main h1 {
+    color: #333;
+}
+
+main p {
+    color: #666;
+}
+
+/* Contact Form Styles */
+#contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Dropdown Content Styles */
+.dropdown-content {
+    max-height: 400px; /* Set a maximum height for the dropdown */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#search-results a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+#search-results a:hover {
+    background-color: #f1f1f1;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

@@ -53,8 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 image.src = result.url;
                 image.width = '256px';
                 image.height = '256px';
-                image.alt = result.name;
-                image.alt.style.color= 'black';
+                image.alt = result.name;                
 
                 const description = document.createElement('p');
                 description.textContent = result.description;
