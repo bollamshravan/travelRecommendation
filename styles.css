@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4; /* Fallback background color */
     color: #333;
-    background-image: url('hgHjV1.jpg'); /* Add the background image */
+    background-image: url('Images/hgHjV1.jpg'); /* Add the background image */
     background-size: cover; /* Ensure the background image covers the entire page */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-attachment: fixed; /* Ensure the background image stays fixed during scroll */
