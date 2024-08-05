@@ -38,13 +38,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Display the filtered recommendations in the dropdown
-        if (filteredRecommendations.length > 0) {
+         // Display the filtered recommendations in the dropdown
+         if (filteredRecommendations.length > 0) {
             filteredRecommendations.forEach(result => {
+                const resultItem = document.createElement('div');
+                resultItem.classList.add('result-item');
+
                 const link = document.createElement('a');
-                link.href = result.url;
+                link.href = '#'; // Update this to the actual URL if available
                 link.textContent = result.name;
-                resultsContainer.appendChild(link);
+
+                const image = document.createElement('img');
+                image.src = result.imageUrl;
+                image.alt = result.name;
+
+                const description = document.createElement('p');
+                description.textContent = result.description;
+
+                resultItem.appendChild(link);
+                resultItem.appendChild(image);
+                resultItem.appendChild(description);
+
+                resultsContainer.appendChild(resultItem);
             });
             resultsContainer.style.display = 'block';
         } else {

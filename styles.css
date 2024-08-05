@@ -218,6 +218,22 @@ nav {
     background-color: #f1f1f1;
 }
 
+.result-item {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.result-item img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-top: 8px;
+}
+
+.result-item p {
+    margin: 8px 0 0;
+}
+
 /* Dropdown Content */
 .dropdown-content {
     display: none;
