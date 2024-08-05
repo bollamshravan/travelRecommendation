@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const image = document.createElement('img');
                 image.src = result.url;
-                image.width = '256px';
-                image.height = '256px';
+                image.width = '400px';
+                image.height = '400px';
                 image.alt = result.name;                
 
                 const description = document.createElement('p');
                 description.textContent = result.description;
 
-               // resultItem.appendChild(link);
+                resultItem.appendChild(link);
                 resultItem.appendChild(image);
                 resultItem.appendChild(description);
 
