@@ -21,20 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
         recommendationsData.countries.forEach(country => {
             country.cities.forEach(city => {
                 if (city.name.toLowerCase().includes(query)) {
-                    filteredRecommendations.push({ name: city.name, url: city.url });
+                    filteredRecommendations.push({ name: city.name, url: city.imageUrl, description: city.description });
                 }
             });
         });
 
         recommendationsData.temples.forEach(temple => {
             if (temple.name.toLowerCase().includes(query)) {
-                filteredRecommendations.push({ name: temple.name, url: temple.url });
+                filteredRecommendations.push({ name: temple.name, url: temple.imageUrl, description: temple.description });
             }
         });
 
         recommendationsData.beaches.forEach(beach => {
             if (beach.name.toLowerCase().includes(query)) {
-                filteredRecommendations.push({ name: beach.name, url: beach.url });
+                filteredRecommendations.push({ name: beach.name, url: beach.imageUrl, description: beach.description });
             }
         });
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.textContent = result.name;*/
 
                 const image = document.createElement('img');
-                image.src = result.imageUrl;
+                image.src = result.url;
                 image.width = '256px';
                 image.height = '256px';
                 image.alt = result.name;
