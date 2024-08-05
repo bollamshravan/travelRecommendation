@@ -209,15 +209,6 @@ ul li a {
     color: black;
 }
 
-.background-image {
-    background-image: url('706912.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
 .slider {
     display: flex;
     overflow-x: auto;
