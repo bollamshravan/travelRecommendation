@@ -87,12 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Thanks for the details.');
-    });
-});
 
 const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
 const newYorkTime = new Date().toLocaleTimeString('en-US', options);
