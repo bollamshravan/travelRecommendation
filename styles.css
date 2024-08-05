@@ -197,6 +197,27 @@ nav {
     background-color: #e6b800;
 }
 
+/* styles.css */
+#search-results {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 100%;
+}
+
+#search-results a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+#search-results a:hover {
+    background-color: #f1f1f1;
+}
+
 /* Dropdown Content */
 .dropdown-content {
     display: none;

@@ -46,16 +46,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.textContent = result.name;
                 resultsContainer.appendChild(link);
             });
+            resultsContainer.style.display = 'block';
         } else {
             const noResults = document.createElement('p');
             noResults.textContent = 'No recommendations found.';
             resultsContainer.appendChild(noResults);
+            resultsContainer.style.display = 'block';
         }
     });
 
     document.getElementById('reset-button').addEventListener('click', function() {
         document.getElementById('search-input').value = '';
         document.getElementById('search-results').innerHTML = '';
+        document.getElementById('search-results').style.display = 'none';
         alert('Search reset');
     });
 });
