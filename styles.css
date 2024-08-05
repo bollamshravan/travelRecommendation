@@ -179,8 +179,6 @@ nav {
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
     position: relative;
 }
 
@@ -242,13 +240,82 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 100%; /* Ensure the dropdown displays below the search box */
+    left: 0;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 300px; /* Increase the width of the dropdown */
+    max-height: 400px; /* Set a maximum height for the dropdown */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content img {#search-results a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+#search-results a:hover {
+    background-color: #f1f1f1;
+}
+
+.result-item {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.result-item img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-top: 8px;
+}
+
+.result-item p {
+    margin: 8px 0 0;
+    color: black; /* Set paragraph text color to black */
+}
+
+.result-item h3 {
+    margin: 8px 0 0;
+    color: black; /* Set title text color to black */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Ensure the dropdown displays below the search box */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 300px; /* Increase the width of the dropdown */
+    max-height: 400px; /* Set a maximum height for the dropdown */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dropdown-content .result-item {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content .result-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content .result-item:hover {
+    background-color: #f1f1f1;
+}
     width: 100%;
     height: auto;
     display: block;
