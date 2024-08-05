@@ -77,3 +77,36 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error fetching data:', error));
 });
+
+document.getElementById('search-button').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const recommendations = [
+        { name: 'Paris', url: 'paris.html' },
+        { name: 'New York', url: 'newyork.html' },
+        { name: 'Tokyo', url: 'tokyo.html' },
+        // Add more recommendations as needed
+    ];
+
+    const results = recommendations.filter(rec => rec.name.toLowerCase().includes(query));
+    const resultsContainer = document.getElementById('search-results');
+    resultsContainer.innerHTML = '';
+
+    if (results.length > 0) {
+        results.forEach(result => {
+            const link = document.createElement('a');
+            link.href = result.url;
+            link.textContent = result.name;
+            resultsContainer.appendChild(link);
+        });
+    } else {
+        const noResults = document.createElement('p');
+        noResults.textContent = 'No recommendations found.';
+        resultsContainer.appendChild(noResults);
+    }
+});
+
+document.getElementById('reset-button').addEventListener('click', function() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('search-results').innerHTML = '';
+});
+

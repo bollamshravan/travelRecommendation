@@ -177,6 +177,7 @@ nav {
 .search-bar {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .search-bar input {
@@ -194,4 +195,88 @@ nav {
 
 .search-bar button:hover {
     background-color: #e6b800;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when the search bar is active */
+.search-bar:focus-within .dropdown-content {
+    display: block;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .slider img {
+        max-width: 100%;
+    }
+
+    .recommendation {
+        margin: 10px auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-menu li {
+        margin: 5px 0;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        padding: 10px;
+    }
+
+    .recommendation {
+        width: 100%;
+    }
 }
