@@ -72,7 +72,7 @@ main {
 main {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
+    align-items: center; /* Align items to the top */
     width: 80%; /* Set a fixed width */
     max-width: 800px; /* Optional: Set a max-width */
     height: 400px; /* Set a fixed height */
