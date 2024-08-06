@@ -59,12 +59,28 @@ header ul li a:hover {
 }
 
 /* Main Content Styles */
+
+/* 
 main {
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Ensure the main element takes at least the full viewport height */
+/*}*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    width: 80%; /* Set a fixed width */
+    max-width: 800px; /* Optional: Set a max-width */
+    height: 400px; /* Set a fixed height */
+    margin: 20px auto; /* Center horizontally with some margin at the top */
+    padding: 20px;
+    background-color: #fff; /* Optional: Add background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add some styling */
+    border-radius: 8px; /* Optional: Add border radius */
 }
 
 main h1 {
