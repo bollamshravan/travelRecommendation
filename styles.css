@@ -59,16 +59,6 @@ header ul li a:hover {
 }
 
 /* Main Content Styles */
-
-/* 
-main {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the main element takes at least the full viewport height */
-/*}*/
-
 main {
     display: flex;
     justify-content: center;
@@ -384,45 +374,6 @@ nav {
     color: black; /* Set paragraph text color to black */
 }/* styles.css */
 
-/* General Styles */
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header ul li {
-    margin-left: 20px;
-}
-
-header ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header ul li a:hover {
-    text-decoration: underline;
-}
-
 /* Contact Form */
 #contact-form {
     background-color: #fff;
@@ -457,21 +408,6 @@ header ul li a:hover {
 
 #contact-form button:hover {
     background-color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 5px 0;
 }
 
 /* Dropdown Content */
