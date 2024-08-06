@@ -9,6 +9,9 @@ body {
     background-size: cover; /* Ensure the background image covers the entire page */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-attachment: fixed; /* Ensure the background image stays fixed during scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items to the top */
 }
 
 /* Header Styles */
