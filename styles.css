@@ -9,9 +9,6 @@ body {
     background-size: cover; /* Ensure the background image covers the entire page */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-attachment: fixed; /* Ensure the background image stays fixed during scroll */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items to the top */
 }
 
 /* Header Styles */
@@ -80,7 +77,8 @@ main {
     max-width: 800px; /* Optional: Set a max-width */
     height: 400px; /* Set a fixed height */
     margin: 5px; /* Center horizontally with some margin at the top */
-    padding: 20px;
+    padding: 10px;
+    min-height: 100vh; /* Ensure the main element takes at least the full viewport height */
 }
 
 main h1 {
@@ -387,20 +385,6 @@ nav {
 }/* styles.css */
 
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -437,23 +421,6 @@ header ul li a {
 
 header ul li a:hover {
     text-decoration: underline;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the main element takes at least the full viewport height */
-}
-
-main h1 {
-    color: #333;
-}
-
-main p {
-    color: #666;
 }
 
 /* Contact Form */
